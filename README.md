@@ -1,7 +1,7 @@
 # MSRD: Movie Search Ranking Dataset
 
-This is a Movielens/TMDB-based dataset for search relevance optimization. It contains:
-* Movie metadata from TMDB/Movielens: title, description, actors, genres, characters, tags, dates, budget, votes.
+This is a [Movielens](https://movielens.org/)/[TMDB](https://tmdb.org)-based dataset for search relevance optimization. It contains:
+* Movie metadata from [Movielens](https://movielens.org/)/[TMDB](https://tmdb.org): title, description, actors, genres, characters, tags, dates, budget, votes.
 * 28320 movie related search queries collected with [Google Keyword Planner](https://ads.google.com/home/tools/keyword-planner/).
 * User metadata: mobile/desktop platform and number of columns in the UI.
 * ~380k relevance labels made by ~1000 people, with corresponding BM25 scores.
@@ -11,7 +11,7 @@ Dataset is built using [toloka.ai](https://toloka.ai) platform by humans and con
 Compared to other relevance-focused datasets like Amazon's [ESCI](https://github.com/amazon-science/esci-data), the MSRD is focused on metadata, and not only on text matching:
 * Movies have textual, categorical and numerical features.
 * Users also have mobile/desktop labels.
-
+* Rankings are shuffled to avoid position bias.
 
 ## Contents
 
